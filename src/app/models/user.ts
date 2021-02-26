@@ -1,8 +1,9 @@
 export interface User {
     firstName: string,
     lastName: string,
-    age: number,
-    address: {
+    email: string,
+    age?: number,
+    address?: {
         street?: string,
         city?: string,
         state?: string
@@ -10,5 +11,5 @@ export interface User {
     image?: string,
     isActive?: boolean,
     registered?: Date,
-    balance?: number
+    hide?: boolean
 }
